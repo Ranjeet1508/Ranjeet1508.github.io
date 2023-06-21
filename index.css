@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+    color: white;
+}
+
+#header{
+    width: 100%;
+    height: 120vh;
+    background-image: url(images/portfoliobg-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding: 10px 40px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#logo{
+    width: 250px;
+    height: 60px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: #38b6ff;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 10%;
+    font-size: 30px;
+}
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span{
+    color:  #38b6ff;
+}
+
+
+
+
+/* About Section */
+
+#about{
+    
+    padding: 100px 0;
+    
+    
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-1 img{
+    width: 80%;
+    height: 600px;
+    border-radius: 10px;
+    margin-top: -80px;
+
+}
+
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.sub-title{
+    font-size: 50px;
+    font-weight: 600;
+    color: #38b6ff;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background:  #38b6ff;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: #38b6ff;
+    font-size: 14px;
+} 
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+/* skill css */
+
+/* .skill-container{
+    height: 100vh;
+} */
+.skill-container h1{
+    font-size: 50px;
+    text-align: center;
+    color:  #38b6ff;
+}
+
+.skill-images{
+    margin: 5% 15%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10%;
+    
+}
+
+.skill-images img{
+    height: 150px;
+    width: 250px;
+}
+
+
+/* project section */
+.project-container{
+    padding: 100px 0;
+    margin: 0 10%;
+}
+
+.project-container h1{
+    font-size: 50px;
+    text-align: center;
+    color:  #38b6ff;
+}
+
+.my-project{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}

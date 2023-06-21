@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranjeet's Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img id="logo" src="./images/logo.png" alt="logo" />
+                <ul>
+                    <li><a href="#">Home</a> </li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Resume</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-text">
+                <h1>Hi, I'm <span>Ranjeet</span> </h1>
+                <p>Full stack web developer</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About section -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/rj2019-removebg-preview.png" alt="2019" />
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hey there! I'm Ranjeet, a full-stack web developer from Unnao, Uttar Pradesh. I recently completed my full-stack web development education at Masai School. Prior to that, I graduated with a BSc degree and worked as a data entry operator in Faridabad, Haryana.
+
+                        With a strong foundation in both front-end and back-end development, I bring a well-rounded skill set to the table. I love creating engaging websites that combine sleek designs with robust functionality.
+                        
+                        Driven by my passion for growth, I constantly seek new challenges and stay up-to-date with the latest industry trends. Collaboration is important to me, and I enjoy working with fellow developers and contributing to open-source projects.
+                        
+                        In summary, I'm a dedicated and adaptable web developer, eager to make a meaningful impact in the field.</p>    
+                        
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skill')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                
+                        <div class="tab-contents active-tab" id="skill">
+                            <ul>
+                                <li> <span>JAVA</span> <br>used for the development of web application</li>
+                                <li> <span>HTML</span> <br>used for making the basic structure of web pages</li>
+                                <li> <span>CSS</span> <br>use for styling the web pages </li>
+                                <li> <span>JavaScript</span> <br>most used language in making websites</li>
+                                <li> <span>REACT</span> <br> used for making single page website</li>
+                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li> <span>2022 - current</span> <br>Polishing my skill of web development in Masai School</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li> <span>Full stack web development</span> <br>from Masai School</li>
+                                <li> <span>Bachelor of science</span> <br>from Kanpur University</li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- My Skills -->
+
+    <div class="skill-container">
+        <h1>My Skills</h1>
+        <div class="skill-images">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyAVd5CyJfZ_kbVSOulxwprUizZunH-j6-UA&usqp=CAU" alt="java" />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAANe_qSkabHH5RzolrTuohkmwpUr7ztKmKg&usqp=CAU" alt="html">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOD1U_MtDc9V3xJ-BYDaP_WzNo6N_mGSp3xg&usqp=CAU" alt="css">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrltazgA2PN1iVP6HgNR8G8WEs9hbrhp5QHA&usqp=CAU" alt="JavaScript">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJj7uzZxRnwcm6Gdyq6xEkDs0_eOsba05liA&usqp=CAU" alt="react">
+        </div>
+    </div>
+
+    <!-- My project -->
+
+    <div class="project-container">
+        <h1>My Project</h1>
+
+        <div class="my-project">
+            <div>
+            <h3>Bluefly</h3>
+            <p>This is e-commerce website that offers its customer to purchase the branded product at discounted price</p>
+            </div>
+
+            <div>
+            <h3>Electon</h3>
+            <p>This is e-commerce website that offers electronic items </p>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    
+    </script>
+</body>
+</html>

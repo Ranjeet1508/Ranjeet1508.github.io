@@ -21,33 +21,39 @@ body{
 .container{
     padding: 10px 40px;
 }
-nav{
+#nav-menu{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    background: #000;
+    position: fixed;
 }
+
+/* #nav-menu{
+    
+} */
 
 #logo{
     width: 250px;
     height: 60px;
 }
 
-nav ul li{
+#nav-menu ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 
 }
 
-nav ul li a{
+#nav-menu ul li a{
     color: white;
     text-decoration: none;
     font-size: 18px;
     position: relative;
 }
 
-nav ul li a::after{
+#nav-menu ul li a::after{
     content: '';
     height: 3px;
     width: 0;
@@ -58,7 +64,7 @@ nav ul li a::after{
     transition: 0.5s;
 }
 
-nav ul li a:hover::after{
+#nav-menu ul li a:hover::after{
     width: 100%;
 }
 

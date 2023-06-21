@@ -211,3 +211,28 @@ body{
     height: 200px;
     width: 300px;
 }
+
+/* contact section */
+
+#contact{
+    padding: 60px;
+
+}
+
+#contact h1{
+    font-size: 60px;
+    color: #38b6ff;
+    text-align: center;
+}
+
+#contact div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#contact div a{
+   font-size: larger;
+    color: aqua;
+}

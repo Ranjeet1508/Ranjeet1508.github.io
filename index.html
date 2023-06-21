@@ -9,20 +9,20 @@
 <body>
     <div id="header">
         <div class="container">
-            <nav>
+            <nav id="nav-menu">
                 <img id="logo" src="./images/logo.png" alt="logo" />
                 <ul>
-                    <li><a href="#">Home</a> </li>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Project</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Resume</a></li>
-                </ul>
+                    <li><a href="#home" class="nav-link home">Home</a></li>
+                    <li><a href="#about" class="nav-link about">About</a></li>
+                    <li><a href="#skills" class="nav-link skills">Skills</a></li>
+                    <li><a href="#projects" class="nav-link projects">Projects</a></li>
+                    <li><a href="#contact" class="nav-link contact">Contact</a></li>
+                    <li><a href="resume.pdf" target="_blank" class="nav-link resume">Resume</a></li>
+                  </ul>
             </nav>
 
             <div class="header-text">
-                <h1>Hi, I'm <span>Ranjeet</span> </h1>
+                <h1>Hi, I'm <span id="user-detail-name">Ranjeet</span> </h1>
                 <p>Full stack web developer</p>
             </div>
         </div>
@@ -30,7 +30,7 @@
 
     <!-- About section -->
 
-    <div id="about">
+    <div  id="about" class="about section">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
@@ -38,7 +38,7 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Hey there! I'm Ranjeet, a full-stack web developer from Unnao, Uttar Pradesh. I recently completed my full-stack web development education at Masai School. Prior to that, I graduated with a BSc degree and worked as a data entry operator in Faridabad, Haryana.
+                    <p  id="user-detail-intro">Hey there! I'm Ranjeet, a full-stack web developer from Unnao, Uttar Pradesh. I recently completed my full-stack web development education at Masai School. Prior to that, I graduated with a BSc degree and worked as a data entry operator in Faridabad, Haryana.
 
                         With a strong foundation in both front-end and back-end development, I bring a well-rounded skill set to the table. I love creating engaging websites that combine sleek designs with robust functionality.
                         
@@ -81,7 +81,7 @@
 
     <!-- My Skills -->
 
-    <div class="skill-container">
+    <div id="skills">
         <h1>My Skills</h1>
         <div class="skill-images">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyAVd5CyJfZ_kbVSOulxwprUizZunH-j6-UA&usqp=CAU" alt="java" />
@@ -94,7 +94,7 @@
 
     <!-- My project -->
 
-    <div class="project-container">
+    <div id="projects">
         <h1>My Project</h1>
 
         <div class="my-project">

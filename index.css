@@ -30,10 +30,6 @@ body{
     position: fixed;
 }
 
-/* #nav-menu{
-    
-} */
-
 #logo{
     width: 250px;
     height: 60px;
@@ -88,10 +84,8 @@ body{
 /* About Section */
 
 #about{
-    
-    padding: 100px 0;
-    
-    
+    padding: 100px 0; 
+   
 }
 
 .row{
@@ -178,6 +172,7 @@ body{
     font-size: 50px;
     text-align: center;
     color:  #38b6ff;
+    margin-top: 50px;
 }
 
 .skill-images{
@@ -210,4 +205,9 @@ body{
     display: flex;
     flex-direction: column;
     gap: 50px;
+}
+
+.project-img{
+    height: 200px;
+    width: 300px;
 }

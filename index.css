@@ -65,7 +65,8 @@ body{
 }
 
 .header-text{
-    margin-top: 10%;
+    margin-top: 20%;
+    margin-left: 5%;
     font-size: 30px;
 }
 
@@ -168,7 +169,7 @@ body{
 /* #skills{
     height: 100vh;
 } */
-#skills h1{
+#skills-container h1{
     font-size: 50px;
     text-align: center;
     color:  #38b6ff;

@@ -238,11 +238,12 @@ body{
     color: aqua;
 }
 
-#resume-btn{
+#resume-button-1 , #resume-button-2{
     background: #38b6ff;
     width: 10rem;
     height: 2rem;
     border-radius: 0.5rem;
     margin-bottom: 3rem;
+    font-weight: 800;
 
 }

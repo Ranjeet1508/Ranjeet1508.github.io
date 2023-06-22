@@ -220,13 +220,13 @@ body{
 
 }
 
-#contact h1{
+#contact h1 , #resume h1{
     font-size: 60px;
     color: #38b6ff;
     text-align: center;
 }
 
-#contact div{
+#contact div, #resume div{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -236,4 +236,13 @@ body{
 #contact div a{
    font-size: larger;
     color: aqua;
+}
+
+#resume-btn{
+    background: #38b6ff;
+    width: 10rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 3rem;
+
 }

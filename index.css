@@ -12,7 +12,7 @@ body{
 
 #header{
     width: 100%;
-    height: 120vh;
+    height: 110vh;
     background-image: url(images/portfoliobg-removebg-preview.png);
     background-size: cover;
     background-position: center;
@@ -21,6 +21,7 @@ body{
 .container{
     padding: 10px 40px;
 }
+
 #nav-menu{
     display: flex;
     align-items: center;
@@ -28,17 +29,21 @@ body{
     flex-wrap: wrap;
     background: #000;
     position: fixed;
+    width: 100%;
+    height: 4rem;
+    top: 0;    
 }
 
 #logo{
-    width: 250px;
-    height: 60px;
+    width: 12rem;
+    height: 2rem;
+    margin-top: -3rem;
 }
 
 #nav-menu ul li{
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
+    margin: 10px 30px;
 
 }
 
@@ -240,7 +245,7 @@ body{
 
 #resume-button-1 , #resume-button-2{
     background: #38b6ff;
-    width: 10rem;
+    width: 9rem;
     height: 2rem;
     border-radius: 0.5rem;
     margin-bottom: 3rem;

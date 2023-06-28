@@ -225,7 +225,7 @@ body{
 
 }
 
-#contact h1 , #resume h1{
+#contact h1 , #resume h1, #git-stats h1{
     font-size: 60px;
     color: #38b6ff;
     text-align: center;
@@ -251,4 +251,14 @@ body{
     margin-bottom: 3rem;
     font-weight: 800;
 
+}
+
+/* github statistics */
+
+#git-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 5rem;
 }

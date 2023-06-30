@@ -53,7 +53,7 @@
                     <h1 class="sub-title">About Me</h1>
                     <p  id="user-detail-intro">Hey there! I'm Ranjeet, a full-stack web developer from Unnao, Uttar Pradesh. I recently completed my full-stack web development education at Masai School. Prior to that, I graduated with a BSc degree and worked as a data entry operator in Faridabad, Haryana.
 
-                        With a strong foundation in both front-end and back-end development, I bring a well-rounded skill set to the table. I love creating engaging websites that combine sleek designs with robust functionality.
+                        With a strong foundation in both front-end and back-end development, I bring a well-rounded skill set to the table, I have expertise in Java, HTML, CSS, JavaScript, and React. I love creating engaging websites that combine sleek designs with robust functionality.
                         
                         Driven by my passion for growth, I constantly seek new challenges and stay up-to-date with the latest industry trends. Collaboration is important to me, and I enjoy working with fellow developers and contributing to open-source projects.
                         
@@ -129,9 +129,34 @@
 
 
     <!-- github statistics -->
+     
+
+</script>
 
     <div id="git-stats">
         <h1>My Github statistics</h1>
+        <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+        </script>
+      
+        <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+        <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+      
+        <!-- Prepare a container for your calendar. -->
+        <section class="react-activity-calendar">
+          <div class="calendar">
+            <!-- Loading stuff -->
+            Loading the data just for you.
+          </div>
+        </section>
+      
+      
+        <script>
+          GitHubCalendar(".calendar", "Ranjeet1508");
+      
+          // or enable responsive functionality:
+          GitHubCalendar(".calendar", "Ranjeet1508", { responsive: true });
+      
+        </script>
         <div>
             <img
             id="github-streak-stats"

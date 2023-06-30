@@ -262,3 +262,6 @@ body{
     align-items: center;
     margin-top: 10rem;
 }
+.react-activity-calendar{
+    width: 50rem;
+}

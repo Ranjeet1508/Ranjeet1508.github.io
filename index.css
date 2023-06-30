@@ -12,7 +12,7 @@ body{
 
 #header{
     width: 100%;
-    height: 110vh;
+    /* height: 110vh; */
     background-image: url(images/portfoliobg-removebg-preview.png);
     background-size: cover;
     background-position: center;

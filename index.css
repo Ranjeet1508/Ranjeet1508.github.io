@@ -35,16 +35,17 @@ body{
 }
 
 #logo{
-    width: 12rem;
+    width: 10rem;
     height: 2rem;
-    margin-top: -3rem;
+    margin-top: -2.5rem;
+    color: #38b6ff;
+    margin-left: 2rem;
 }
 
 #nav-menu ul li{
     display: inline-block;
     list-style: none;
-    margin: 10px 30px;
-
+    margin: 1rem 2rem;
 }
 
 #nav-menu ul li a{
@@ -171,9 +172,7 @@ body{
 
 /* skill css */
 
-/* #skills{
-    height: 100vh;
-} */
+
 #skills-container h1{
     font-size: 50px;
     text-align: center;
@@ -182,16 +181,28 @@ body{
 }
 
 .skill-images{
-    margin: 5% 15%;
+    margin: 3% 10%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10%;
-    
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3%;    
 }
 
-.skill-images img{
-    height: 150px;
-    width: 250px;
+.skills-card{
+    width: 140px;
+    background: #38b6ff;
+    text-align: center;
+    transition: transform 0.5s;
+    border-radius: 10px 10px 0 0;
+}
+
+.skills-card:hover{
+    transform: translateY(-10px);
+}
+
+.skills-card img{
+    height: 120px;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
 }
 
 
@@ -208,49 +219,122 @@ body{
 }
 
 .my-project{
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px , 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
 }
 
-.project-img{
-    height: 200px;
-    width: 300px;
+.project-card img{
+    width: 100%;
+    display: block;
 }
 
-/* contact section */
+.my-project div{
+    background: #262626;
+    padding: 13px;
+    font-size: 13px;
+    font-weight: 300;
+    /* border-radius: 5px; */
+    transition:  transform 0.5s
+}
+
+.my-project div:hover{
+ 
+    transform: translateY(-10px);
+}
+
+.my-project div a{
+    color:#fff;
+    font-size: 12px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+/* .project-img{
+    height: 150px;
+    width: 250px;
+} */
+
+.project-tech-stack > p:first-child{
+    font-size: larger;
+    color: #38b6ff;
+    margin-top: 0.1rem;
+    
+}
+
+/* ----------contact section------------ */
 
 #contact{
     padding: 60px;
-
 }
 
 #contact h1 , #resume h1, #git-stats h1{
     font-size: 60px;
     color: #38b6ff;
     text-align: center;
+    outline: none;
 }
 
-#contact div, #resume div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+.contact-left{
+    flex-basis: 35%;
 }
 
-#contact div a{
-   font-size: larger;
-    color: aqua;
+.contact-right{
+    flex-basis: 60%;
 }
 
-#resume-button-1 , #resume-button-2{
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left p i{
+    margin-right: 15px;
+    color: #38b6ff;
+    font-size: 25px;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: white;
+    display: inline-block;
+}
+
+.social-icons a:hover{
+    color: #38b6ff;
+    transform: translateY(-5px);
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input , form textarea{
+    width: 100%;
+    border: 0;;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+#resume-button-1 , #resume-button-2, .submit-btn{
     background: #38b6ff;
-    width: 9rem;
+    width: 8rem;
     height: 2rem;
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
     margin-bottom: 3rem;
     font-weight: 800;
-
+    cursor: pointer;
 }
 
 /* github statistics */
@@ -260,8 +344,23 @@ body{
     flex-direction: column;
     gap: 2rem;
     align-items: center;
-    margin-top: 10rem;
+    margin-top: 10rem;    
 }
+
+#github-cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5%;
+   
+}
+
 .react-activity-calendar{
-    width: 50rem;
+    width: 31rem;
+}
+
+.copyright{
+    width:100%;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 20px;
 }

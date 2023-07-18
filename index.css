@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
+    
 }
 
 body{
@@ -12,23 +13,23 @@ body{
 
 #header{
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     background-image: url(images/portfoliobg-removebg-preview.png);
     background-size: cover;
-    background-position: center;
+    background-position: right;
 }
 
 .container{
-    padding: 10px 40px;
+    padding: 1rem 4rem;
 }
 
 #nav-menu{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+     flex-wrap: wrap; 
     background: #000;
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 4rem;
     top: 0;    
@@ -363,4 +364,25 @@ form input , form textarea{
     text-align: center;
     font-weight: 300;
     margin-top: 20px;
+}
+
+/*-----------css for small screen ------------*/
+
+@media screen and (max-width: 600px){
+    #header{
+        background-image: url(images/phone-bg.png);
+         background-position: right;
+    }
+
+    .header-text{
+         margin-top: 100%;
+        font-size: 16px; 
+       
+    }
+    
+    .header-text h1{
+        font-size: 30px;
+        /* margin-top: 20px; */
+    }
+    
 }

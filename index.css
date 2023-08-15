@@ -409,6 +409,10 @@ form input , form textarea{
         cursor: pointer;
     }
 
+    .logo{
+        margin-left: -2rem;
+    }
+
     .nav ul{
         position: fixed;
         top:60px;

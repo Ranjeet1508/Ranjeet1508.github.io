@@ -1,133 +1,181 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'poppins', sans-serif;
+    font-family: 'Zapfino';
     box-sizing: border-box;
-    
 }
 
 body{
-    background: #000;
+    background-color: #000;
     color: white;
 }
 
-#header{
-    width: 100%;
-    height: 100vh;
-    background-image: url(images/portfoliobg-removebg-preview.png);
-    background-size: cover;
-    background-position: right;
-}
-
-.container{
-    padding: 1rem 4rem;
-}
-
-#nav-menu{
+.nav{
+    height: 60px;
+    background: rgb(21, 18, 18);
     display: flex;
     align-items: center;
     justify-content: space-between;
-     flex-wrap: wrap; 
-    background: #000;
-    position: absolute;
+    padding: 0px 50px;
+    box-shadow: rgb(54, 124, 199) 0px 20px 30px -10px;
+    position: fixed;
     width: 100%;
-    height: 4rem;
-    top: 0;    
+    top: 0;
 }
 
-#logo{
-    width: 10rem;
-    height: 2rem;
-    margin-top: -2.5rem;
-    color: #38b6ff;
-    margin-left: 2rem;
-}
-
-#nav-menu ul li{
-    display: inline-block;
+.nav ul{
+    display: flex;
     list-style: none;
-    margin: 1rem 2rem;
 }
 
-#nav-menu ul li a{
-    color: white;
+.nav ul li a{
+    color: rgb(16, 207, 207);
     text-decoration: none;
     font-size: 18px;
+    top: 10px;
     position: relative;
 }
 
-#nav-menu ul li a::after{
+.nav ul li a::after{
     content: '';
-    height: 3px;
     width: 0;
-    background-color: #38b6ff;
+    height: 3px;
+    background: rgb(16, 207, 207);
     position: absolute;
     left: 0;
     bottom: -6px;
     transition: 0.5s;
 }
 
-#nav-menu ul li a:hover::after{
+.nav ul li a:hover::after{
     width: 100%;
 }
 
-.header-text{
-    margin-top: 20%;
-    margin-left: 5%;
-    font-size: 30px;
+.resume-button{
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    width: 7rem;
+    background-color: aqua;
+    border-radius: 5px;
+    margin-top: -8px;
 }
 
-.header-text h1{
-    font-size: 60px;
-    margin-top: 20px;
+.resume-btn2{
+    font-size: 18px;
+    padding: 1%;
+    width: 8rem;
+    background-color: rgb(16, 207, 207);
+    font-weight: 600;
+    border-radius: 5px;
 }
 
-.header-text h1 span{
-    color:  #38b6ff;
+.nav .logo{
+    font-family: 'Zapfino';
+    font-size: 33px;
+    color: rgb(16, 207, 207);
+    font-weight: 600;
+}
+
+.nav-list ul li{
+    margin: 0 1rem;
+}
+
+.hamburger{
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    right: 40px;
+    visibility: hidden;
+}
+#click{
+    visibility: hidden;
+    position: absolute;
 }
 
 
-
-
-/* About Section */
-
-#about{
-    padding: 100px 0; 
-   
+.info-heading{
+    text-decoration: underline;
+    color: rgb(16, 207, 207);
+    text-align: center;
+    font-size: 5vw;
+    margin-top: 10vh;
 }
 
-.row{
+/* ------------------Profile section--------------------- */
+
+#profile{
+    padding: 0 2rem;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
-.about-col-1{
-    flex-basis: 35%;
+.image{
+    width: 40%;
+    margin-top: 2rem;
+    box-shadow: rgb(54, 124, 199) 0px 20px 30px -10px;
 }
 
-.about-col-1 img{
-    width: 80%;
-    height: 600px;
+.image img{
+    width: 100%;
+}
+
+.name-profession{
+    margin-top: 30rem; 
+}
+
+.name{
+    font-size: 7vw;
+    color: rgb(16, 207, 207);
+    text-decoration: underline;   
+}
+
+.profession{
+    font-size: 4vw;    
+}
+
+
+ /* -------------about section-------------------- */
+
+.about{
+    padding: 2rem;
+    text-align: center;
+    box-shadow: rgb(54, 124, 199) 0px 20px 30px -10px;
+}
+
+#about-para{
+    width: 40%;
+    box-shadow: rgba(62, 62, 103, 0.25) 0px 50px 100px -20px, rgba(45, 43, 43, 0.3) 0px 30px 60px -30px;
+    padding: 1rem
+}
+
+#about-para > p{
+    text-align: left;
+}
+
+.about-me{
+    padding: 2rem 0rem;
+    font-size: 18px;
     border-radius: 10px;
-    margin-top: -80px;
-
+    display: flex;
+    justify-content: space-between;
 }
 
-.about-col-2{
-    flex-basis: 60%;
+.brief-intro{
+    font-size: 25px;
+    text-decoration: underline;
+    color:rgb(16, 207, 207) ;
 }
 
-.sub-title{
-    font-size: 50px;
-    font-weight: 600;
-    color: #38b6ff;
+.tabs{
+    width: 30%;
+    margin-top: 20px;
 }
 
 .tab-titles{
     display: flex;
-    margin: 20px 0 40px;
-
+    justify-content: space-around;
+    margin-left: 1rem;
 }
 
 .tab-links{
@@ -142,10 +190,10 @@ body{
     content: '';
     width: 0;
     height: 3px;
-    background:  #38b6ff;
+    background: rgb(16, 207, 207) ;
     position: absolute;
     left: 0;
-    bottom: -8px;
+    top: 3vh;
     transition: 0.5s;
 }
 
@@ -153,15 +201,19 @@ body{
     width: 50%;
 }
 
-.tab-contents ul li {
-    list-style: none;
-    margin: 10px 0;
+.tab-contents{
+    margin-top: 20px;
+    text-align: left;
 }
 
+.tab-contents ul li{
+    margin-top: 20px;
+    
+}
 .tab-contents ul li span{
-    color: #38b6ff;
-    font-size: 14px;
-} 
+    margin-top: 24px;
+    color: rgb(16, 207, 207);
+}
 
 .tab-contents{
     display: none;
@@ -171,59 +223,79 @@ body{
     display: block;
 }
 
-/* skill css */
+/* -----------git-hub card status------------- */
 
-
-#skills-container h1{
-    font-size: 50px;
-    text-align: center;
-    color:  #38b6ff;
-    margin-top: 50px;
+#language{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
 }
 
-.skill-images{
-    margin: 3% 10%;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 3%;    
+#github-cards{
+    padding: 1vw;
+    display: flex;
+    justify-content: space-evenly;
+    
 }
 
-.skills-card{
-    width: 140px;
-    background: #38b6ff;
+#language img{
+    width: 25vw;
+    padding: 0.5rem;
+    box-shadow: rgb(54, 124, 199) 0px 20px 30px -10px;
+}
+#github-cards img{
+    width: 40vw;
+    padding: 0.5rem;
+    box-shadow: rgb(54, 124, 199) 0px 20px 30px -10px;
+}
+
+.calendar{
+    width: 60%;
+    margin-left: 20%;   
+    box-shadow: rgb(54, 124, 199) 0px 20px 30px -10px;
+}
+
+
+/* --------------skill section----------------- */
+
+.skills{
+    margin-top: 40px;
+}
+.skill-card {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     text-align: center;
-    transition: transform 0.5s;
+}
+
+.skill-card div{
+    margin-top: 20px;
+    padding: 0.5rem;
+    box-shadow: rgb(54, 124, 199) 0px 20px 30px -10px;
     border-radius: 10px 10px 0 0;
 }
 
-.skills-card:hover{
-    transform: translateY(-10px);
+.skill-card img{
+    width: 8rem;
+    height: 8rem;
 }
 
-.skills-card img{
-    height: 120px;
-    width: 100%;
-    border-radius: 10px 10px 0 0;
-}
-
-
-/* project section */
+/* -------------------project section------------------ */
 #projects{
-    padding: 100px 0;
+    padding: 4rem 0rem;
     margin: 0 10%;
-}
-
-#projects h1{
-    font-size: 50px;
-    text-align: center;
-    color:  #38b6ff;
 }
 
 .my-project{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px , 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px , 1fr));
     grid-gap: 40px;
     margin-top: 50px;
+}
+
+.project-card{
+    box-shadow: rgb(54, 124, 199) 0px 20px 30px -10px;
 }
 
 .project-card img{
@@ -232,7 +304,7 @@ body{
 }
 
 .my-project div{
-    background: #262626;
+    background: black;
     padding: 13px;
     font-size: 13px;
     font-weight: 300;
@@ -252,10 +324,6 @@ body{
     display: inline-block;
 }
 
-/* .project-img{
-    height: 150px;
-    width: 250px;
-} */
 
 .project-tech-stack > p:first-child{
     font-size: larger;
@@ -264,7 +332,8 @@ body{
     
 }
 
-/* ----------contact section------------ */
+
+/* ------------------contact section------------------ */
 
 #contact{
     padding: 60px;
@@ -328,61 +397,106 @@ form input , form textarea{
     border-radius: 6px;
 }
 
-#resume-button-1 , #resume-button-2, .submit-btn{
-    background: #38b6ff;
-    width: 8rem;
-    height: 2rem;
-    border-radius: 0.3rem;
-    margin-bottom: 3rem;
-    font-weight: 800;
-    cursor: pointer;
-}
-
-/* github statistics */
-
-#git-stats {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-    margin-top: 10rem;    
-}
-
-#github-cards{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 5%;
-   
-}
-
-.react-activity-calendar{
-    width: 31rem;
-}
-
 .copyright{
-    width:100%;
     text-align: center;
-    font-weight: 300;
     margin-top: 20px;
 }
 
-/*-----------css for small screen ------------*/
 
-@media screen and (max-width: 600px){
-    #header{
-        background-image: url(images/phone-bg.png);
-         background-position: right;
+@media screen and (max-width: 768px) {
+    .hamburger{
+        visibility: visible;
+        cursor: pointer;
     }
 
-    .header-text{
-         margin-top: 100%;
-        font-size: 16px; 
-       
+    .nav ul{
+        position: fixed;
+        top:60px;
+        right: -100%;
+        background: rgb(21, 18, 18);
+        height: 100vh;
+        width: 40%;
+        display: block;
+        transition: all 0.5s ease;
+    }
+
+    #click:checked ~ .nav-list ul{
+        right: 0%;
+    }
+
+    #click:checked ~ .hamburger i:before{
+        content: "\f00d";
+    }
+
+    .nav ul li{
+        margin: 30px 20% ;
+    }
+
+    /* profile section on phone */
+    #profile{
+        display: block;
+    }
+
+    .image{
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .name-profession{
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .name{
+        font-size: 9vw;
     }
     
-    .header-text h1{
-        font-size: 30px;
-        /* margin-top: 20px; */
+    .profession{
+        font-size: 6vw
+    }
+
+    .info-heading{
+        font-size: 10vw;
+    }
+
+    /* -----------about section----------- */
+
+    .about-me{
+        display: block;
+    }
+    #about-para{
+        width: 100%;
+    }
+    .tabs{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .tab-titles{
+        display: flex;
+        justify-content: space-around;
+        margin-left: 2.5rem;
+    }
+
+
+    /* -----------git-status section----------- */
+
+    #github-cards{
+        flex-direction: column;
+        text-align: center;
     }
     
+    #language img{
+        width: 50vw;
+        
+    }
+
+    #github-cards img{
+        width: 60vw;
+        /* height: 10vh; */
+    }
+
+    .calendar{
+        display: none;
+        position: absolute;  
+    }
 }

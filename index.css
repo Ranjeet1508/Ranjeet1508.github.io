@@ -262,10 +262,11 @@ body{
     margin-top: 40px;
 }
 .skill-card {
-    display: flex;
     padding: 1rem;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 1rem;
+    column-gap: 2rem;
     text-align: center;
 }
 
@@ -403,6 +404,8 @@ form input , form textarea{
 }
 
 
+/*----------- responsive design code -----------*/
+
 @media screen and (max-width: 768px) {
     .hamburger{
         visibility: visible;
@@ -481,6 +484,12 @@ form input , form textarea{
         margin-left: 2.5rem;
     }
 
+    /*------------- skills section --------------*/
+
+    .skill-card {
+        grid-template-columns: repeat(3,1fr);
+    }
+
 
     /* -----------git-status section----------- */
 
@@ -502,5 +511,13 @@ form input , form textarea{
     .calendar{
         display: none;
         position: absolute;  
+    }
+}
+
+
+
+@media screen and (max-width: 540px){
+    .skill-card {
+        grid-template-columns: repeat(2,1fr);
     }
 }

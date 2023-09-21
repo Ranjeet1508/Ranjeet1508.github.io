@@ -117,6 +117,7 @@ body{
 }
 
 .image img{
+    margin-top: 3rem;
     width: 100%;
 }
 

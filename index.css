@@ -348,6 +348,8 @@ body{
     outline: none;
 }
 
+
+
 .contact-left{
     flex-basis: 35%;
 }
@@ -384,7 +386,14 @@ body{
 }
 
 .contact-right form{
-    width: 100%;
+    width: 70%;
+}
+
+#msg{
+    color: #38b6ff;
+    display: block;
+    margin-top: 10px;
+    font-size: 24px;
 }
 
 form input , form textarea{
@@ -401,7 +410,7 @@ form input , form textarea{
 
 .copyright{
     text-align: center;
-    margin-top: 20px;
+    margin-top: 100px;
 }
 
 
@@ -513,6 +522,9 @@ form input , form textarea{
         display: none;
         position: absolute;  
     }
+    .contact-right form{
+        width: 100%;
+    }
 }
 
 
@@ -520,5 +532,8 @@ form input , form textarea{
 @media screen and (max-width: 540px){
     .skill-card {
         grid-template-columns: repeat(2,1fr);
+    }
+    .contact-right form{
+        width: 100%;
     }
 }

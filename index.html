@@ -2282,12 +2282,14 @@
 
 
                     <div class="contact-right">
-                        <form action="">
+                        <form name="submit-to-google-sheet">
                             <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="email" name="email" placeholder="Your Email" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
                             <textarea name="Message" placeholder="Your Message" rows="6"></textarea>
                             <button type="submit" class="resume-btn2">Submit</button>
                         </form>
+
+                        <span id="msg"></span>
                     </div>
                 </div>
             </div>
@@ -2299,6 +2301,25 @@
     </div>
 
     <script src="./index.js"></script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzhdzycYVNEboY5HMb4ldNfJQIxqWT91WFs4PlB3NRB7An4JZHVBRd4aDgyFJYvDLVe/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully";
+                setTimeout(() => {
+                    msg.innerHTML = ''
+                },5000)
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
 </body>
 
 </html>

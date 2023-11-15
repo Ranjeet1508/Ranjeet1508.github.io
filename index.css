@@ -109,6 +109,7 @@ body{
     padding: 0 2rem;
     height: 100vh;
     display: flex;
+    align-items: center;
     justify-content: space-around;
 }
 

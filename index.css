@@ -57,7 +57,7 @@ body{
     font-size: 21px;
     font-weight: 500;
     width: 8rem;
-    background-color: aqua;
+    background-color: rgb(16, 207, 207);
     border-radius: 5px;
     margin-top: -8px;
 }
@@ -346,7 +346,7 @@ body{
 
 .project-tech-stack > p:first-child{
     font-size: larger;
-    color: #38b6ff;
+    color: rgb(16, 207, 207);
     margin-top: 0.1rem;
     
 }
@@ -381,7 +381,7 @@ body{
 
 .contact-left p i{
     margin-right: 15px;
-    color: #38b6ff;
+    color: rgb(16, 207, 207);
     font-size: 25px;
 }
 
@@ -398,7 +398,7 @@ body{
 }
 
 .social-icons a:hover{
-    color: #38b6ff;
+    color: rgb(16, 207, 207);
     transform: translateY(-5px);
 }
 
@@ -407,7 +407,7 @@ body{
 }
 
 #msg{
-    color: #38b6ff;
+    color: rgb(16, 207, 207);
     display: block;
     margin-top: 10px;
     font-size: 24px;

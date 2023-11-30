@@ -6,13 +6,14 @@
 }
 
 body{
-    background-color: #0a0a0a;
+    background: linear-gradient(to right, #000000 40%, #004c4c);
     color: white;
 }
 
 .nav{
     height: 60px;
-    background: rgb(21, 18, 18);
+    /* background: rgb(21, 18, 18); */
+    background: linear-gradient(to right, #000000 40%, #004c4c);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -324,7 +325,6 @@ body{
 }
 
 .my-project div{
-    background: black;
     padding: 13px;
     font-size: 13px;
     font-weight: 300;
@@ -417,7 +417,7 @@ form input , form textarea{
     width: 100%;
     border: 0;;
     outline: none;
-    background: #262626;
+    background: #002525;
     padding: 15px;
     margin: 15px 0;
     color: #fff;
@@ -448,7 +448,8 @@ form input , form textarea{
         top:60px;
         font-size: 14px;
         right: -100%;
-        background: rgb(21, 18, 18);
+        /* background: rgb(21, 18, 18); */
+        background: linear-gradient(to right, #000000 , #004c4c);
         height: 100vh;
         width: 40%;
         display: block;

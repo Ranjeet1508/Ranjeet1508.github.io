@@ -30,8 +30,8 @@
                     <li><a href="#projects">Project</a></li>
                     <li><a href="#skills">Skill</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a id="resume-link-1" href="./Resume/Ranjeet-Resume.pdf" download="Ranjeet-Resume"
-                            target="_blank" class="nav-link resume">
+                    <li><a id="resume-link-1" href="./Resume/Ranjeet-Resume.pdf" 
+                            onclick="openAndDownloadResume(event, this.href)" class="nav-link resume">
                             <button class="resume-button" id="resume-button-1">Resume</button></a></li>
                 </ul>
             </div>
@@ -104,7 +104,8 @@
             </div>
 
 
-            <a id="resume-link-2" href="./Resume/Ranjeet-Resume.pdf" download="Ranjeet-Resume" target="_blank">
+            <a id="resume-link-2" href="./Resume/Ranjeet-Resume.pdf" 
+                onclick="openAndDownloadResume(event, this.href)">
                 <button class="resume-button" id="resume-button-2">My Resume</button></a>
 
         </div>
@@ -2167,19 +2168,19 @@
                 </div>
             </div>
             <!-- Display top languages  -->
-            <div id="language">
+            <!-- <div id="language">
                 <img id="github-top-langs"
                     src="https://github-readme-stats.vercel.app/api/top-langs?username=Ranjeet1508&show_icons=true&locale=en&layout=compact"
                     alt="Ranjeet1508" />
-            </div>
+            </div> -->
 
             <!-- Display GitHub streak and stats cards -->
             <div id="github-cards">
-                <div>
+                <!-- <div>
                     <img id="github-stats-card"
                         src="https://github-readme-stats.vercel.app/api?username=Ranjeet1508&show_icons=true&locale=en"
                         alt="Ranjeet1508" />
-                </div>
+                </div> -->
                 <div>
                     <img id="github-streak-stats" align="center"
                         src="https://github-readme-streak-stats.herokuapp.com?user=Ranjeet1508" alt="Ranjeet1508" />
@@ -2195,26 +2196,26 @@
 
             <div class="my-project">
                 <div class="project-card">
-                    <img class="project-img" src="./images/foodies.png" alt="advenotur">
+                    <img class="project-img" src="./images/crypto.png" alt="crypto">
 
-                    <h2 class="project-title">1. foodies</h2>
-                    <p class="project-description">This is a food ordering application and has an amazing admin page for
-                        handling orders </p>
+                    <h2 class="project-title">4. Crypto</h2>
+                    <p class="project-description">This is a crypto currency website, give real time information about
+                        all currencies
+                        available in the market
+                    </p>
                     <div class="project-tech-stack">
                         <p>Tech Stack Used</p>
-                        <p>1. React + vite + typescript</p>
-                        <p>2. Node js</p>
-                        <p>3. Express JS</p>
-                        <p>4. MongoDb</p>
+                        <p>1. React JS</p>
+                        <p>2. Chakra UI</p>
+                        <p>3. Chart JS</p>
                     </div>
-                    <a href="https://github.com/Ranjeet1508/foodies" class="project-github-link" target="_blank"><i
+                    <a href="https://github.com/Ranjeet1508/crypto" class="project-github-link" target="_blank"><i
                             class="fa-brands fa-github"></i> Github
                         repository
                         link</a>
                     <br>
-                    <a href="https://drive.google.com/file/d/1lfaoBKDaK0Xzqj_sPLqEwgpU-iKP8I2O/view?usp=sharing"
-                        class="project-deployed-link" target="_blank"><i class="fa-brands fa-chrome"></i> Project
-                        Deployed
+                    <a href="https://crypto-mu-five.vercel.app/" class="project-deployed-link" target="_blank"><i
+                            class="fa-brands fa-chrome"></i> Project Deployed
                         link</a>
                 </div>
 
@@ -2267,26 +2268,26 @@
                 </div>
 
                 <div class="project-card">
-                    <img class="project-img" src="./images/crypto.png" alt="crypto">
+                    <img class="project-img" src="./images/foodies.png" alt="advenotur">
 
-                    <h2 class="project-title">4. Crypto</h2>
-                    <p class="project-description">This is a crypto currency website, give real time information about
-                        all currencies
-                        available in the market
-                    </p>
+                    <h2 class="project-title">4. foodies</h2>
+                    <p class="project-description">This is a food ordering application and has an amazing admin page for
+                        handling orders </p>
                     <div class="project-tech-stack">
                         <p>Tech Stack Used</p>
-                        <p>1. React JS</p>
-                        <p>2. Chakra UI</p>
-                        <p>3. Chart JS</p>
+                        <p>1. React + vite + typescript</p>
+                        <p>2. Node js</p>
+                        <p>3. Express JS</p>
+                        <p>4. MongoDb</p>
                     </div>
-                    <a href="https://github.com/Ranjeet1508/crypto" class="project-github-link" target="_blank"><i
+                    <a href="https://github.com/Ranjeet1508/foodies" class="project-github-link" target="_blank"><i
                             class="fa-brands fa-github"></i> Github
                         repository
                         link</a>
                     <br>
-                    <a href="https://crypto-mu-five.vercel.app/" class="project-deployed-link" target="_blank"><i
-                            class="fa-brands fa-chrome"></i> Project Deployed
+                    <a href="https://drive.google.com/file/d/1lfaoBKDaK0Xzqj_sPLqEwgpU-iKP8I2O/view?usp=sharing"
+                        class="project-deployed-link" target="_blank"><i class="fa-brands fa-chrome"></i> Project
+                        Deployed
                         link</a>
                 </div>
 
